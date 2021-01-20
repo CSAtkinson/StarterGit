@@ -1,15 +1,11 @@
 const express = require('express');
-const { Console } = require('console');
 const app = express();
 
 
-app.get('/', (req, res) => {
-    res.render('index')
+app.get('/', (req,res) => {
+    res.send("Having trouble rendering an HTML page through express for now. Will work on it more tomorrow, so here is a res.send with git stuffs.")
 })
 
-
-
-
-app.listen(3000, (req, res) => {
+app.listen(3000, () => {
     console.log("Listening on port 3000")
 })
